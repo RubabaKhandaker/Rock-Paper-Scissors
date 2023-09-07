@@ -2,10 +2,10 @@ var wins = 0;
 var ties = 0;
 var losses = 0;
 
-var options = ["Rock", "Paper", "Scissors"];
+var options = ["R", "P", "S"];
 
 var playGame = function() {
-    var userChoice = window.prompt("Enter Rock, Paper, or Scissors:");
+    var userChoice = window.prompt("Enter R, P, or S:");
 
     if (!userChoice) {
         return;
@@ -23,9 +23,9 @@ var playGame = function() {
         window.alert("It's a tie!");
 
     } else if (
-        (userChoice === "Rock" && computerChoice === "Scissors") ||
-        (userChoice === "Scissors" && computerChoice === "Paper") ||
-        (userChoice === "Paper" && computerChoice === "Rock")
+        (userChoice === "R" && computerChoice === "S") ||
+        (userChoice === "S" && computerChoice === "P") ||
+        (userChoice === "P" && computerChoice === "R")
     ) {
         wins++;
         windows.alert("You win!");
